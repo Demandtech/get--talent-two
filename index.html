@@ -5,13 +5,94 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
  <title>Recruit Information resume page</title>
  <link rel="stylesheet" href="./css/bootstrap.min.css">
  <link rel="stylesheet" href="css/resume.css">
 </head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+   
+}
+.w-25{
+  width: 30% !important;
+}
+
+.bg-blue {
+    background-color: rgba(39, 118, 234, 1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.75);
+}
+
+.btn-outline-blue {
+    width: 118px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn-outline-blue:hover {
+    border: 2px solid transparent;;
+    border-radius: 8px;
+    background-color: #fff;
+    color: rgba(39, 118, 234, 1);
+}
+
+
+
+.bg-footer {
+    background-color: rgba(8, 24, 47, 1);
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+  @media(max-width:770px ){
+   .right{
+   width: 100% !important;
+   }
+  }
+
+   @media(max-width:400px){
+ .right{
+  width: 100% !important;
+  font-size: 14px;
+  margin: 0 !important;
+ }
+ .w-25{
+  width: 100% !important;
+  text-align: center !important;
+ }
+ .wrapper{
+  flex-direction: column !important;
+  margin-top: 10px;
+ }
+ .border-dark{
+    border: none !important;
+ }
+ .header{
+    font-size: 20px !important;
+ }
+ .w-50{
+    padding-right: 10px !important;
+ }
+}
+
+
+</style>
 <body class="">
     <header>
-        <nav class="navbar opacity-25 navbar-expand-lg navbar-dark bg-blue ">
+        <nav class="navbar  navbar-expand-lg navbar-dark bg-blue ">
             <div class="container">
               <a class="navbar-brand me-5 pe-5 active" aria-current="page" href="index.html"><img src="img/anonymous-user-header-logo.png" alt="Logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,14 +126,14 @@
           </nav>
     </header>
     <main class="">
-       <div class="container opacity-25 pt-4">
-          <h1 class="fs-4 my-4 fw-lighter">Recruits | <span class="fw-bold">Recruit information</span></h1>
+       <div class="container pt-4">
+          <h1 class="fs-4 header my-4 fw-lighter">Recruits | <span class="fw-bold">Recruit information</span></h1>
        </div>
-       <div class="container border border-dark border-outline bg-light opacity-1 py-5 mb-5 ps-4">
-           <div class="d-flex pt-4 wrapper">
+       <div class="container border border-dark bg-light py-5 mb-5 ps-4">
+           <div class="d-flex wrapper">
                  <div class="left w-25">
                      <h2 class="fs-4 fw-bolder">ODUNLAMI OLUWAFEMI</h2>
-                     <div class="d-flex stack align-items-center justify-content-between">
+                     <div class="d-flex my-2 stack align-items-center justify-content-between">
                           <div>UX</div>
                           <div class="bg-dark" style="width: 7px; height: 7px;border-radius:50%"></div>
                           <div>VISUAL</div>
@@ -74,7 +155,7 @@
 
            <div class="d-flex mt-3 wrapper">
                  <div class="left w-25 text-end ">
-                     <h4 class="fs-6 fw-bolder ">EDUCATION-</h4>
+                     <h4 class="fs-6 fw-bolder pb-2">EDUCATION-</h4>
                      
                 </div>
                 <div class="right ms-5 w-50 pe-5">
@@ -88,7 +169,7 @@
 
            <div class="d-flex mt-3 wrapper">
                 <div class="left w-25 text-end ">
-                     <h4 class="fs-6 fw-bolder ">EXPERIENCE - </h4>
+                     <h4 class="fs-6 fw-bolder pb-2 ">EXPERIENCE - </h4>
                 </div>
                 <div class="right ms-5 w-50 pe-5">
                      <p class="fw-bold">UI/UX Designer - KodeCamp</p>
@@ -132,7 +213,7 @@
 
            <div class="d-flex mt-3 wrapper">
                  <div class="left w-25 text-end ">
-                     <h4 class="fs-6 fw-bolder ">SKILLS - </h4>
+                     <h4 class="fs-6 fw-bolder pb-2">SKILLS - </h4>
                 </div>
                 <div class="right ms-5 w-50 pe-5">
                  <ul class="">
@@ -155,7 +236,7 @@
 
            <div class="d-flex mt-3 wrapper">
                  <div class="left w-25 text-end ">
-                     <h4 class="fs-6 fw-bolder ">CERTIFICATIONS - </h4>
+                     <h4 class="fs-6 fw-bolder pb-2">CERTIFICATIONS - </h4>
                      
                 </div>
                 <div class="right ms-5 w-50 pe-5">
@@ -176,7 +257,7 @@
             
        </div>
     </main>
-    <footer class="bg-footer opacity-25">
+    <footer class="bg-footer">
         <div class="container py-5">
             <div class="row py-2">
                 <div class="col-lg-8 col-md-8 col-12">
